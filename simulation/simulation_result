@@ -1,0 +1,256 @@
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_test...
+# UVM_INFO tb/apb_test.sv(71) @ 0: uvm_test_top [APB_TEST] Starting APB UVM test
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 25: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=0 ACTUAL=0
+# UVM_INFO tb/apb_monitor.sv(177) @ 25: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=0 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 55: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=0 ACTUAL=0
+# UVM_INFO tb/apb_monitor.sv(177) @ 55: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=0 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 85: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=8b
+# UVM_INFO tb/apb_monitor.sv(162) @ 85: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=8b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 115: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=76
+# UVM_INFO tb/apb_monitor.sv(162) @ 115: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=76 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 145: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=98
+# UVM_INFO tb/apb_monitor.sv(162) @ 145: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=98 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 175: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=0 ACTUAL=0
+# UVM_INFO tb/apb_monitor.sv(177) @ 175: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=0 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 205: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=98 ACTUAL=98
+# UVM_INFO tb/apb_monitor.sv(177) @ 205: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=98 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 235: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=0 ACTUAL=0
+# UVM_INFO tb/apb_monitor.sv(177) @ 235: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=0 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 265: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=0 ACTUAL=0
+# UVM_INFO tb/apb_monitor.sv(177) @ 265: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=0 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 295: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=8b ACTUAL=8b
+# UVM_INFO tb/apb_monitor.sv(177) @ 295: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=8b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 325: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=1
+# UVM_INFO tb/apb_monitor.sv(162) @ 325: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=1 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 355: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=1 ACTUAL=1
+# UVM_INFO tb/apb_monitor.sv(177) @ 355: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=1 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 385: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=98
+# UVM_INFO tb/apb_monitor.sv(162) @ 385: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=98 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 415: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=19
+# UVM_INFO tb/apb_monitor.sv(162) @ 415: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=19 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 445: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=8b ACTUAL=8b
+# UVM_INFO tb/apb_monitor.sv(177) @ 445: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=8b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 475: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=98 ACTUAL=98
+# UVM_INFO tb/apb_monitor.sv(177) @ 475: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=98 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 505: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=6e
+# UVM_INFO tb/apb_monitor.sv(162) @ 505: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=6e VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 535: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=6e ACTUAL=6e
+# UVM_INFO tb/apb_monitor.sv(177) @ 535: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=6e VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 565: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=0 ACTUAL=0
+# UVM_INFO tb/apb_monitor.sv(177) @ 565: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=0 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 595: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=23
+# UVM_INFO tb/apb_monitor.sv(162) @ 595: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=23 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 625: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=98 ACTUAL=98
+# UVM_INFO tb/apb_monitor.sv(177) @ 625: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=98 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 655: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=23 ACTUAL=23
+# UVM_INFO tb/apb_monitor.sv(177) @ 655: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=23 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 685: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=93
+# UVM_INFO tb/apb_monitor.sv(162) @ 685: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=93 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 715: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=93 ACTUAL=93
+# UVM_INFO tb/apb_monitor.sv(177) @ 715: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=93 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 745: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=3a
+# UVM_INFO tb/apb_monitor.sv(162) @ 745: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=3a VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 775: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=e5
+# UVM_INFO tb/apb_monitor.sv(162) @ 775: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=e5 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 805: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=3a ACTUAL=3a
+# UVM_INFO tb/apb_monitor.sv(177) @ 805: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=3a VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 835: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=e5 ACTUAL=e5
+# UVM_INFO tb/apb_monitor.sv(177) @ 835: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=e5 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 865: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=93 ACTUAL=93
+# UVM_INFO tb/apb_monitor.sv(177) @ 865: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=93 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 895: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=91
+# UVM_INFO tb/apb_monitor.sv(162) @ 895: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=91 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 925: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=9c
+# UVM_INFO tb/apb_monitor.sv(162) @ 925: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=9c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 955: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=2c
+# UVM_INFO tb/apb_monitor.sv(162) @ 955: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=2c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 985: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=83
+# UVM_INFO tb/apb_monitor.sv(162) @ 985: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1015: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=83 ACTUAL=83
+# UVM_INFO tb/apb_monitor.sv(177) @ 1015: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1045: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=e5 ACTUAL=e5
+# UVM_INFO tb/apb_monitor.sv(177) @ 1045: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=e5 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1075: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=e7
+# UVM_INFO tb/apb_monitor.sv(162) @ 1075: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=e7 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1105: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=e5 ACTUAL=e5
+# UVM_INFO tb/apb_monitor.sv(177) @ 1105: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=e5 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1135: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=2c
+# UVM_INFO tb/apb_monitor.sv(162) @ 1135: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=2c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1165: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=e7 ACTUAL=e7
+# UVM_INFO tb/apb_monitor.sv(177) @ 1165: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=e7 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1195: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=83 ACTUAL=83
+# UVM_INFO tb/apb_monitor.sv(177) @ 1195: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1225: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=28
+# UVM_INFO tb/apb_monitor.sv(162) @ 1225: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=28 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1255: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=83 ACTUAL=83
+# UVM_INFO tb/apb_monitor.sv(177) @ 1255: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1285: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=28 ACTUAL=28
+# UVM_INFO tb/apb_monitor.sv(177) @ 1285: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=28 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1315: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=e7 ACTUAL=e7
+# UVM_INFO tb/apb_monitor.sv(177) @ 1315: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=e7 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1345: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=28 ACTUAL=28
+# UVM_INFO tb/apb_monitor.sv(177) @ 1345: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=28 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1375: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=83 ACTUAL=83
+# UVM_INFO tb/apb_monitor.sv(177) @ 1375: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1405: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=83 ACTUAL=83
+# UVM_INFO tb/apb_monitor.sv(177) @ 1405: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1435: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=28 ACTUAL=28
+# UVM_INFO tb/apb_monitor.sv(177) @ 1435: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=28 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1465: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=e5 ACTUAL=e5
+# UVM_INFO tb/apb_monitor.sv(177) @ 1465: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=e5 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1495: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=4d
+# UVM_INFO tb/apb_monitor.sv(162) @ 1495: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=4d VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1525: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=4d ACTUAL=4d
+# UVM_INFO tb/apb_monitor.sv(177) @ 1525: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=4d VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1555: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=33
+# UVM_INFO tb/apb_monitor.sv(162) @ 1555: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=33 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1585: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=83 ACTUAL=83
+# UVM_INFO tb/apb_monitor.sv(177) @ 1585: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=83 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1615: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=2e
+# UVM_INFO tb/apb_monitor.sv(162) @ 1615: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=2e VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1645: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=a8
+# UVM_INFO tb/apb_monitor.sv(162) @ 1645: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=a8 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1675: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=a5
+# UVM_INFO tb/apb_monitor.sv(162) @ 1675: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=a5 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1705: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=e7 ACTUAL=e7
+# UVM_INFO tb/apb_monitor.sv(177) @ 1705: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=e7 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1735: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=80
+# UVM_INFO tb/apb_monitor.sv(162) @ 1735: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=80 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1765: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=f1
+# UVM_INFO tb/apb_monitor.sv(162) @ 1765: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=f1 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1795: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=2e ACTUAL=2e
+# UVM_INFO tb/apb_monitor.sv(177) @ 1795: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=2e VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1825: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=27
+# UVM_INFO tb/apb_monitor.sv(162) @ 1825: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=27 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1855: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=80 ACTUAL=80
+# UVM_INFO tb/apb_monitor.sv(177) @ 1855: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=80 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 1885: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=28
+# UVM_INFO tb/apb_monitor.sv(162) @ 1885: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=28 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1915: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=27 ACTUAL=27
+# UVM_INFO tb/apb_monitor.sv(177) @ 1915: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=27 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1945: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=f1 ACTUAL=f1
+# UVM_INFO tb/apb_monitor.sv(177) @ 1945: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=f1 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 1975: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=27 ACTUAL=27
+# UVM_INFO tb/apb_monitor.sv(177) @ 1975: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=27 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2005: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=27 ACTUAL=27
+# UVM_INFO tb/apb_monitor.sv(177) @ 2005: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=27 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2035: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=95
+# UVM_INFO tb/apb_monitor.sv(162) @ 2035: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=95 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2065: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=33
+# UVM_INFO tb/apb_monitor.sv(162) @ 2065: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=33 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=ac
+# UVM_INFO tb/apb_monitor.sv(162) @ 2095: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=ac VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2125: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=f1 ACTUAL=f1
+# UVM_INFO tb/apb_monitor.sv(177) @ 2125: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=f1 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2155: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=5c
+# UVM_INFO tb/apb_monitor.sv(162) @ 2155: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=5c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2185: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=ac ACTUAL=ac
+# UVM_INFO tb/apb_monitor.sv(177) @ 2185: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=ac VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2215: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=5c ACTUAL=5c
+# UVM_INFO tb/apb_monitor.sv(177) @ 2215: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=5c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2245: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=46
+# UVM_INFO tb/apb_monitor.sv(162) @ 2245: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=46 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2275: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=6c
+# UVM_INFO tb/apb_monitor.sv(162) @ 2275: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=6c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2305: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=e9
+# UVM_INFO tb/apb_monitor.sv(162) @ 2305: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=e9 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2335: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=b6
+# UVM_INFO tb/apb_monitor.sv(162) @ 2335: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=b6 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2365: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=a
+# UVM_INFO tb/apb_monitor.sv(162) @ 2365: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=a VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2395: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=a ACTUAL=a
+# UVM_INFO tb/apb_monitor.sv(177) @ 2395: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=a VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2425: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=6c ACTUAL=6c
+# UVM_INFO tb/apb_monitor.sv(177) @ 2425: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=6c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2455: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=23
+# UVM_INFO tb/apb_monitor.sv(162) @ 2455: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=23 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2485: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=6c ACTUAL=6c
+# UVM_INFO tb/apb_monitor.sv(177) @ 2485: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=6c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2515: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=b6 ACTUAL=b6
+# UVM_INFO tb/apb_monitor.sv(177) @ 2515: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=b6 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2545: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=ac ACTUAL=ac
+# UVM_INFO tb/apb_monitor.sv(177) @ 2545: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=ac VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2575: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=23 ACTUAL=23
+# UVM_INFO tb/apb_monitor.sv(177) @ 2575: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=23 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2605: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=45
+# UVM_INFO tb/apb_monitor.sv(162) @ 2605: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=45 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2635: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=c EXPECTED=ac ACTUAL=ac
+# UVM_INFO tb/apb_monitor.sv(177) @ 2635: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=c DATA=ac VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2665: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=8 EXPECTED=6c ACTUAL=6c
+# UVM_INFO tb/apb_monitor.sv(177) @ 2665: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=8 DATA=6c VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2695: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=ac
+# UVM_INFO tb/apb_monitor.sv(162) @ 2695: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=ac VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2725: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=c DATA=a1
+# UVM_INFO tb/apb_monitor.sv(162) @ 2725: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=c DATA=a1 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2755: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=7b
+# UVM_INFO tb/apb_monitor.sv(162) @ 2755: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=7b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2785: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=31
+# UVM_INFO tb/apb_monitor.sv(162) @ 2785: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=31 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2815: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=8 DATA=11
+# UVM_INFO tb/apb_monitor.sv(162) @ 2815: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=8 DATA=11 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2845: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=6b
+# UVM_INFO tb/apb_monitor.sv(162) @ 2845: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=6b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2875: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=0 DATA=d3
+# UVM_INFO tb/apb_monitor.sv(162) @ 2875: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=0 DATA=d3 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2905: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=6b ACTUAL=6b
+# UVM_INFO tb/apb_monitor.sv(177) @ 2905: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=6b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2935: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=4 EXPECTED=6b ACTUAL=6b
+# UVM_INFO tb/apb_monitor.sv(177) @ 2935: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=4 DATA=6b VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(178) @ 2965: uvm_test_top.env.scoreboard [APB_SCOREBOARD] READ PASS: ADDR=0 EXPECTED=d3 ACTUAL=d3
+# UVM_INFO tb/apb_monitor.sv(177) @ 2965: uvm_test_top.env.agent.monitor [APB_MONITOR] READ ADDR=0 DATA=d3 VALID=1
+# UVM_INFO tb/apb_scoreboard.sv(151) @ 2995: uvm_test_top.env.scoreboard [APB_SCOREBOARD] WRITE ADDR=4 DATA=94
+# UVM_INFO tb/apb_monitor.sv(162) @ 2995: uvm_test_top.env.agent.monitor [APB_MONITOR] WRITE ADDR=4 DATA=94 VALID=1
+# UVM_INFO tb/apb_test.sv(96) @ 2995: uvm_test_top [APB_TEST] APB UVM sequence completed
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 3095: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO tb/apb_coverage.sv(101) @ 3095: uvm_test_top.env.coverage [APB_COVERAGE] APB FUNCTIONAL COVERAGE = 100.00%
+# UVM_INFO tb/apb_scoreboard.sv(222) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] ========================================
+# UVM_INFO tb/apb_scoreboard.sv(228) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD]         APB SCOREBOARD SUMMARY
+# UVM_INFO tb/apb_scoreboard.sv(234) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] ========================================
+# UVM_INFO tb/apb_scoreboard.sv(240) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] Transactions : 100
+# UVM_INFO tb/apb_scoreboard.sv(249) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] PASS         : 54
+# UVM_INFO tb/apb_scoreboard.sv(258) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] FAIL         : 0
+# UVM_INFO tb/apb_scoreboard.sv(267) @ 3095: uvm_test_top.env.scoreboard [APB_SCOREBOARD] ========================================
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  214
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [APB_COVERAGE]     1
+# [APB_MONITOR]   100
+# [APB_SCOREBOARD]   107
+# [APB_TEST]     2
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 3095 ns  Iteration: 54  Instance: /tb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.7c/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+
